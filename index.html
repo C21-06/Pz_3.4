@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift Code in HTML</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        function modifyAndCheck() {
+            // Функція для модифікації масиву "modifyАгау"
+            function modifyАгау(array) {
+                array.unshift("start");
+                array.pop();
+                array[1] = "modified";
+                return array;
+            }
+
+            // Функція для модифікації масиву "агауОрегаіон"
+            function агауOperation(array1) {
+                array1 = ["cat", "dog", "elephant"];
+                array1.push("end");
+                array1.shift();
+                array1.splice(3, 0, "middle");
+                return array1;
+                console.log(array1);
+            }
+
+            // Функція для перевірки цілочисельності числа "checkInteger"
+            function checkInteger(number) {
+                return Number.isInteger(number) ? "Число ціле" : "Число не ціле";
+            }
+
+            // Приклад використання:
+            var exampleArray = ["item1", "item2", "item3"];
+            var exampleNumber = 42;
+
+            var modifiedArray = modifyАгау(exampleArray.slice());
+            var checkedResult = checkInteger(exampleNumber);
+
+            console.log("Modified Array:", modifiedArray);
+            console.log("Checked Result:", checkedResult);
+        }
+
+        // Виклик функції при завантаженні сторінки
+        modifyAndCheck();
+    </script>
+
+</body>
+</html>
